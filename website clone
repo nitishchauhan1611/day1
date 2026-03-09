@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="C:\fullstack web\node_modules\bootstrap\dist\css\bootstrap.css">
+    <link rel="stylesheet" href="C:\fullstack web\node_modules\bootstrap-icons\font\bootstrap-icons.css">
+    <style>
+        body{
+            box-shadow: 5px 5px 5px gainsboro;
+        }
+        nav{
+            box-shadow: 5px 5px 5px black;
+            width: 100%;
+        }
+        iframe{
+            border: none;
+            height: 700px;
+        }
+        ul{
+            width: 600px;
+        }
+       li{
+        margin-left: 30px;
+       }
+       #carousel{
+        height: 600px;
+        width: 100%;
+       }
+       section{
+        box-shadow: 3px 3px 3px rgb(14, 11, 11);
+       }
+       p{
+        text-align: center;
+       }
+       #imgright{
+            width: 150px;
+            height: 150px;
+            float: right;
+        }
+        #left{
+            width: 1100px;
+            text-align: center;
+        }
+        #home{
+            background-image: linear-gradient(rgb(105, 91, 104));
+            color: black;
+            text-align: center;
+        }
+        #JD{
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+            column-gap: 20px;
+        }
+        #imgRight{
+            width: 200px;
+            height: 120px;
+            float: right;
+        }
+        #imgLeft{
+            width: 200px;
+            height: 120px;
+            float: left;
+        }
+        #inline{
+            text-align:left;
+        }
+        #brown{
+            background-color: rgba(197, 161, 82, 0.904);
+            color: black;
+            text-align: center;
+        }
+        #DepartmentDetails{
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            column-gap: 30px;
+        }
+        #card{
+            box-shadow: 5px 5px 5px solid rgb(224, 20, 20);
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <h2 class="d-flex justify-content-center align-items-center m-4">Welcome To My First Web Page</h2>
+     <nav class="navbar -navbar-expand navbar-expand-lg navbar-dark bg-dark mt-1">
+        <div class="container-fluid">
+            <button class="navbar-toggler" data-bs-target="#menulist" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="menulist">
+              <ul class="navbar-nav ">
+                <li class="nav-item input-group">
+                    <a class="nav-link" href="Cards.html">
+                        <span class=" bi bi-house-door">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item input-group">
+                    <a class="nav-link" target="frameBody" href="forms.html">
+                        <span class="bi bi-question-circle"></span>About
+                    </a>
+                </li>
+                <li class="nav-item input-group">
+                    <a class="nav-link" href="butttons.html">
+                        <span class="bi bi-question-circle"></span>Service
+                    </a>
+                </li>
+                <li class="nav-item input-group">
+                    <a class="nav-link " href="demoform.html">
+                        <span class="bi bi-phone">contact Us</span>
+                    </a>
+                </li>
+              </ul>
+            </div> 
+        </div> 
+        <div class="nav-item">
+            <a class="navbar-brand" href="#">
+                <span class="bi bi-check-circle"></span>Sign In
+            </a>
+        </div>
+     </nav>
+      <section class="container-fluid mt-1" id="banners">
+        <div class="carousel carousel-dark slide " data-bs-ride="carousel">
+            <div class="carousel-inner ">
+                 <div class="carousel-item active">
+                     <img src="C:\asset\WhatsApp Image 2025-09-27 at 11.06.23 AM.jpeg" id="carousel" alt="loading">
+                 </div>
+                 <div class="carousel-item">
+                     <img src="C:\asset\WhatsApp Image 2025-09-27 at 11.06.22 AM.jpeg" id="carousel" alt="loading">
+                 </div>
+                 <div class="carousel-item">
+                     <img src="C:\asset\WhatsApp Image 2025-09-27 at 11.06.23 AM (1).jpeg" id="carousel" alt="loading">
+                 </div>
+                 <div class="carousel-item">
+                     <img src="C:\asset\WhatsApp Image 2025-09-27 at 11.06.28 AM (1).jpeg" id="carousel" alt="loading">
+                 </div>
+                 <div class="carousel-item">
+                     <img src="C:\asset\WhatsApp Image 2025-09-27 at 11.06.28 AM.jpeg" id="carousel" alt="loading">
+                 </div>
+                 <div class="carousel-item">
+                     <img src="C:\asset\WhatsApp Image 2025-09-27 at 11.10.13 AM.jpeg" id="carousel" alt="loading">
+                 </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center m-4">
+            <button class="btn btn-warning">Show me what's  in this package</button>
+        </div>
+        <div class="d-flex justify-content-center align-items-center m-3">
+            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#package">What is the package</button>
+        </div>
+        <div class="collapse active justify-content-center align-items-center m-4" id="package" >
+             <p >* A package is a small container in which a quantity of something is sold. Packages are either <br> small boxes made of thin cardboard, or bags or envalopes made of paper or plastic.... When a <br> product is packaged, it is put into container to be sold.</p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center m-4">
+            <hr style="width: 500px;">
+        </div>
+        <div class="table-responsive">
+            <img src="C:\asset\WhatsApp Image 2025-09-17 at 1.45.53 PM.jpeg" alt="loading...." id="imgright">
+            <table class="table table-hover  table-striped border " id="left">
+                    <tr>
+                        <th>Department</th>
+                        <th>Included</th>
+                    </tr>
+                    <tr>
+                        <td>M.Tech</td>
+                        <td><span class="bi bi-check"></span></td>
+                    </tr>
+                    <tr>
+                        <td>B.Tech</td>
+                        <td><span class="bi bi-check"></span></td>
+                    </tr>
+                    <tr>
+                        <td>MCA</td>
+                        <td><span class="bi bi-check"></span></td>
+                    </tr> 
+                    <tr>
+                        <td>MBA</td>
+                        <td><Span class=" bi bi-check"></Span></td>
+                    </tr>
+            </table>
+        </div>
+        <div id="home" class="mt-4">
+             <h4>What is the job</h4>
+             <div class="mt-4" id="JD">
+                <div>
+                   <span class="bi bi-keyboard"></span>
+                   <h6>Type of jobs</h6>
+                   <p>volcanologist,...  Quantum physicist,... Oceanographer,.. Biomedical enngineer,..</p>
+                </div>
+                <div>
+                    <span class="bi bi-file-word"></span>
+                    <h6>Define job profile</h6>
+                    <p>Job profile developed by    the personal department of a  business might include such  things as jobb responsibilities,  required qualification, advancement  prospects.</p>
+                </div>
+                <div>
+                    <span class="bi bi-c-circle"></span>
+                    <h6>Job profile summary</h6>
+                    <p>profile summary is a summary  of your education, skills,  career experiences, and goals</p>
+                </div>
+                <div>
+                    <span class="bi bi-pc"></span>
+                    <h6>The IT skills</h6>
+                    <p>Coding.  Communication.  Network. Time Management.  More Information Technology Skills</p>
+                </div>
+                <div>
+                    <span class="bi bi-pc"></span>
+                    <h6>Freshers key skills</h6>
+                    <p>Communication.  Ability to Work Under pressure.  Decision Making.  Time Management. Self-motivation. Conflict Resolution. Personal skills? Leadership.Adaptability</p>
+                </div>
+                <div>
+                    <span class="bi bi-pc"></span>
+                    <h6>Personal skills</h6>
+                    <p>a skill is the ability to do  something well, a certain competence  or proficiency. Skills are typically  acquired or developed through  direct experiences and training,  and they can require sustained effort</p>
+                </div>
+             </div>
+        </div>
+        <div class="container-fluid mt-4 mb-4 pb-4">
+            <div>
+                <img src="C:\asset\netflix.jpg" alt="loading" id="imgRight">
+                <div class="p-4">
+                    <span class="bi bi-1-circle" style="font-size: 35px;"></span>Why do you want this job?
+                    <div id="float1" >
+                        <p id="inline">The hiring manager wants to : Learn about your career goals and how this position fir into your plan. Make sure that you are sincerely intrested in the job and will be motivated to perform if hired . Find out what you know about the company, industry , position (and if you took the took the time to research).</p>
+                    </div>
+                </div>
+                <hr style="width: 500px;">
+            </div>
+        </div>
+        <div class="container-fluid mt-4 mb-4 pb-4">
+            <div>
+                <img src="C:\asset\perfume.jpg" alt="loading" id="imgLeft">
+                <div class="p-4">
+                    <span class="bi bi-2-circle" style="font-size: 35px;"></span> What is a CV example?
+                    <div id="float1" >
+                        <p id="inline"> A resume is a brief summary... If you were writting your resume you would include only the work information that relates specifically to the job you're applying for, but for a curriculum vitae, you would also include all your teaching experience, lab and field work.</p>
+                    </div>
+                </div>
+            </div>
+            <hr style="width: 500px; text-align: left;">
+        </div>
+        <div class="container-fluid mt-4 mb-4 pb-4">
+            <div>
+                <img src="C:\asset\earphone'jpg.jpeg" alt="loading" id="imgright">
+                <div class="p-4">
+                    <span class="bi bi-3-circle" style="font-size: 35px;"></span>Do you need a resume for your first job?
+                    <div id="float1" >
+                        <p id="inline">When writing you first resume with no work experience, it's appropriate to include casual jobs like babysitting, pet sitting. lawn moving , and shoveling now. All experience count and the way you present yourself , your skills, and your assets to a hiring manager begins with a strong resume.</p>
+                    </div>
+                </div>
+            </div>
+            <hr style="width: 40%;">
+        </div>
+        <div class="container-fluid mt-4 mb-4 pb-4">
+            <div>
+                <img src="C:\asset\watch.jpg" alt="loading" id="imgLeft">
+                <div class="p-4">
+                    <span class="bi bi-4-circle" style="font-size: 35px;" ></span>Why do you want this job?
+                    <div id="float1">
+                        <p id="inline">Lorem ipsum dolor sit amet, elit. Nobis dolorum neque incidunt iure ipsum. Consectetur, impedit veniam voluptatum aut expedita maxime dolorem magnam rerum velit explicabo iure magni cumque ipsam consequatur ducimus repellendus minima ea unde corporis ipsa amet. Autem fuga</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 5%; margin-bottom: 2%;">
+          <button class="btn btn-primary">Request call Back</button>  
+          <button class="btn btn-danger">FAQ'S</button>  
+        </div>
+        <div id="brown" class="mt-4">
+            <h5>Student Department Details</h5>
+            <div id="DepartmentDetails" style="margin-top: 2%;">
+                <div>
+                    <span class="bi bi-hourglass"></span>
+                    <p>Average Salary Offered <br><b>INR 7 l per annum</b> <br>per annum</p>
+                </div>
+                <div>
+                    <span class="bi-arrow-clockwise"></span>
+                    <p>Duration <br><b>2</b> <br>years</p>
+                </div>
+                <div>
+                    <span class="bi bi-hand-thumbs-up"></span>
+                    <p>Average Fees Incurred<br><b>INR 25,000 - 2 L</b> <br>per annum</p>
+                </div>
+                <div>
+                    <span class="bi bi-flag"></span>
+                    <p>Indian Institute of Technology,[IIT] <br>Kanpur<br><b>49,035</b> <br>Kanpur</p>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 5%;">
+            <h5 style="text-align: center;">SERVICES</h5>
+            <div class="w-100" style="display: grid; grid-template-columns: 4fr 4fr 4fr;">
+                <div class="card w-75 m-2" style="box-shadow: 5px 5px 5px black;">
+                    <div class="mt-4" style="height: 400px;"  id="card">
+                        <img src="C:\asset\php.jpg" class="w-100 h-50" >
+                        <h5 style="margin-top:10%;">WEB DESIGN !!</h5>
+                        <p style="text-align: left;"> Online orderning system helps to maintain a Better Business Relationship with your customers , which is a key factor to run any successful business.</p>
+                    </div>
+                </div> 
+                <div class="card w-75  mt-4 m-4" style="box-shadow: 5px 5px 5px black;">
+                    <div class="mt-4" style="height: 400px;"  id="card">
+                        <img src="C:\asset\work.jpg" class="w-100 h-50" >
+                        <h5 style="margin-top:10%;">IT SERVICES !!</h5>
+                        <p style="text-align: left;"> We are ideally located in Larbert meaning we can offer IT support to business throughout Scotland . We take the hassle and worry out of your IT system by providing preventative and proactive IT support.</p>
+                    </div>
+                </div>
+                <div class="card w-75   m-2 " style="box-shadow: 5px 5px 5px black;">
+                    <div class="mt-4" style="height: 400px;"  id="card">
+                        <img src="C:\asset\job.jpg" class="w-100 h-50" >
+                        <h5 style="margin-top:10%;">WEB DESIGN !!</h5>
+                        <p style="text-align: left;"> We are passionate about digital content creation stratigies and delivery . We deliver results by designing markating stratigies which improve our cleints brands visibility.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+     <script src="C:\fullstack web\node_modules\jquery\dist\jquery.js"></script>
+     <script src="C:\fullstack web\node_modules\bootstrap\dist\js\bootstrap.bundle.js"></script>
+</body>
+</html>
